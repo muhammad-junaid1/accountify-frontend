@@ -186,7 +186,7 @@ function Sidebar({ collapsible, isMobile = false }) {
     navMenu.collapse();
   };
 
-  const langDirection=useSelector(selectLangDirection)
+  const langDirection = useSelector(selectLangDirection);
   return (
     <Sider
       collapsible={collapsible}
@@ -197,13 +197,13 @@ function Sidebar({ collapsible, isMobile = false }) {
       style={{
         overflow: 'auto',
         height: '100vh',
-        direction:langDirection,
-        position:isMobile?"absolute":"relative",
+        direction: langDirection,
+        position: isMobile ? 'absolute' : 'relative',
         bottom: '20px',
         ...(!isMobile && {
           background: 'none',
           border: 'none',
-          [langDirection==="rtl"?"right":"left"]: '20px',
+          [langDirection === 'rtl' ? 'right' : 'left']: '20px',
           top: '20px',
           borderRadius: '8px',
         }),
@@ -217,10 +217,11 @@ function Sidebar({ collapsible, isMobile = false }) {
           cursor: 'pointer',
         }}
       >
-        <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '40px' }} />
+        {/* <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '40px' }} /> */}
 
         {!showLogoApp && (
-          <img
+          <>
+            {/* <img
             src={logoText}
             alt="Logo"
             style={{
@@ -228,7 +229,9 @@ function Sidebar({ collapsible, isMobile = false }) {
               marginLeft: '10px',
               height: '38px',
             }}
-          />
+          /> */}
+            <h2 style={{ color: '#4a5ed8', textAlign: 'center' }}>Accountify</h2>
+          </>
         )}
       </div>
       <Menu
@@ -255,7 +258,7 @@ function MobileSidebar() {
     setVisible(false);
   };
 
-  const langDirection=useSelector(selectLangDirection)
+  const langDirection = useSelector(selectLangDirection);
   return (
     <>
       <Button
@@ -263,9 +266,7 @@ function MobileSidebar() {
         size="large"
         onClick={showDrawer}
         className="mobile-sidebar-btn"
-
-        
-        style={{ [langDirection==="rtl"?"marginRight":"marginLeft"]: 25 }}
+        style={{ [langDirection === 'rtl' ? 'marginRight' : 'marginLeft']: 25 }}
       >
         <MenuOutlined style={{ fontSize: 18 }} />
       </Button>
@@ -275,16 +276,13 @@ function MobileSidebar() {
           boxShadow: 'none',
         }}
         style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
-        placement={langDirection==="rtl"?"right":"left"}
-
+        placement={langDirection === 'rtl' ? 'right' : 'left'}
         closable={false}
         onClose={onClose}
         open={visible}
-
       >
         <Sidebar collapsible={false} isMobile={true} />
       </Drawer>
-      
     </>
   );
 }

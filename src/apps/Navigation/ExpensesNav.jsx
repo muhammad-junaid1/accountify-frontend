@@ -109,11 +109,14 @@ function Sidebar({ collapsible, isMobile = false }) {
         <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '40px' }} />
 
         {!showLogoApp && (
-          <img
+          <>
+            {/* <img
             src={logoText}
             alt="Logo"
             style={{ marginTop: '3px', marginLeft: '10px', height: '38px' }}
-          />
+          /> */}
+            <h2 style={{ color: '#4a5ed8', textAlign: 'center' }}>Accountify</h2>
+          </>
         )}
       </div>
       <Menu
