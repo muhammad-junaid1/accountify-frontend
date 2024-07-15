@@ -81,16 +81,7 @@ function Sidebar({ collapsible, isMobile = false }) {
       icon: <FileOutlined />,
       label: <Link to={'/offer'}>{translate('offers')}</Link>,
     },
-    {
-      key: 'invoice',
-      icon: <ContainerOutlined />,
-      label: <Link to={'/invoice'}>{translate('invoices')}</Link>,
-    },
-    {
-      key: 'quote',
-      icon: <FileSyncOutlined />,
-      label: <Link to={'/quote'}>{translate('proforma invoices')}</Link>,
-    },
+
     {
       key: 'payment',
       icon: <CreditCardOutlined />,

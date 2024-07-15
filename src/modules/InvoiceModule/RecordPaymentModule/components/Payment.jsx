@@ -77,13 +77,13 @@ export default function Payment({ config, currentItem }) {
               >
                 {translate('Cancel')}
               </Button>,
-              <Button
-                key={`${uniqueId()}`}
-                onClick={() => navigate(`/invoice/read/${currentErp._id}`)}
-                icon={<FileTextOutlined />}
-              >
-                {translate('Show Invoice')}
-              </Button>,
+              // <Button
+              //   key={`${uniqueId()}`}
+              //   onClick={() => navigate(`/invoice/read/${currentErp._id}`)}
+              //   icon={<FileTextOutlined />}
+              // >
+              //   {translate('Show Invoice')}
+              // </Button>,
             ]}
             style={{
               padding: '20px 0px',

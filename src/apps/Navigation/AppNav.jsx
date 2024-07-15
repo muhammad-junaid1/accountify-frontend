@@ -47,16 +47,7 @@ const AppNav = ({ translate }) => [
     icon: <FileOutlined />,
     label: <Link to={'/offer'}>{translate('Offer Leads')}</Link>,
   },
-  {
-    key: 'invoice',
-    icon: <ContainerOutlined />,
-    label: <Link to={'/invoice'}>{translate('invoice')}</Link>,
-  },
-  {
-    key: 'quote',
-    icon: <FileSyncOutlined />,
-    label: <Link to={'/quote'}>{translate('quote')}</Link>,
-  },
+
   {
     key: 'payment',
     icon: <CreditCardOutlined />,

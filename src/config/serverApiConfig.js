@@ -7,7 +7,7 @@ export const BASE_URL =
     ? import.meta.env.VITE_BACKEND_SERVER
     : 'http://localhost:8888/';
 
-export const WEBSITE_URL = 'https://accountify.netlify.app/';
+export const WEBSITE_URL = 'https://avenue5-accounting.netlify.app/';
 export const DOWNLOAD_BASE_URL =
   import.meta.env.PROD || import.meta.env.VITE_DEV_REMOTE
     ? import.meta.env.VITE_BACKEND_SERVER + 'download/'
