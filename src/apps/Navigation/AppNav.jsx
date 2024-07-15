@@ -68,15 +68,7 @@ const AppNav = ({ translate }) => [
     label: <Link to={'/expenses'}>{translate('expense')}</Link>,
   },
   {
-    key: 'product',
-    icon: <TagOutlined />,
-    label: <Link to={'/product'}>{translate('product')}</Link>,
-  },
-  {
-    key: 'categoryproduct',
-    icon: <TagsOutlined />,
-    label: <Link to={'/category/product'}>{translate('product_category')}</Link>,
-  },
+
   // {
   //   key: 'employee',
   //   icon: <UserOutlined />,

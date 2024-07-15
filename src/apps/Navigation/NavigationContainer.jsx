@@ -98,16 +98,6 @@ function Sidebar({ collapsible, isMobile = false }) {
     },
 
     {
-      key: 'product',
-      icon: <TagOutlined />,
-      label: <Link to={'/product'}>{translate('products')}</Link>,
-    },
-    {
-      key: 'categoryproduct',
-      icon: <TagsOutlined />,
-      label: <Link to={'/category/product'}>{translate('products_category')}</Link>,
-    },
-    {
       key: 'expenses',
       icon: <WalletOutlined />,
       label: <Link to={'/expenses'}>{translate('expenses')}</Link>,
