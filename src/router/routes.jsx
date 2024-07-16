@@ -23,17 +23,11 @@ const EmailRead = lazy(() => import('@/pages/Email/EmailRead'));
 const EmailUpdate = lazy(() => import('@/pages/Email/EmailUpdate'));
 const AdvancedSettings = lazy(() => import('@/pages/AdvancedSettings'));
 const Profile = lazy(() => import('@/pages/Profile'));
-const Lead = lazy(() => import('@/pages/Lead/index'));
-const Offer = lazy(() => import('@/pages/Offer/index'));
-const OfferCreate = lazy(() => import('@/pages/Offer/OfferCreate'));
-const OfferRead = lazy(() => import('@/pages/Offer/OfferRead'));
-const OfferUpdate = lazy(() => import('@/pages/Offer/OfferUpdate'));
 
 const ExpenseCategory = lazy(() => import('@/pages/ExpenseCategory'));
 const Expense = lazy(() => import('@/pages/Expense'));
 
 const People = lazy(() => import('@/pages/People'));
-const Company = lazy(() => import('@/pages/Company'));
 
 const About = lazy(() => import('@/pages/About'));
 const Currency = lazy(() => import('@/pages/Currency'));
@@ -73,10 +67,7 @@ let routes = {
       path: '/people',
       element: <People />,
     },
-    {
-      path: '/company',
-      element: <Company />,
-    },
+
     {
       path: '/inventory',
       element: <Inventory />,
@@ -147,26 +138,7 @@ let routes = {
       path: '/profile',
       element: <Profile />,
     },
-    {
-      path: '/lead',
-      element: <Lead />,
-    },
-    {
-      path: '/offer',
-      element: <Offer />,
-    },
-    {
-      path: '/offer/create',
-      element: <OfferCreate />,
-    },
-    {
-      path: '/offer/read/:id',
-      element: <OfferRead />,
-    },
-    {
-      path: '/offer/update/:id',
-      element: <OfferUpdate />,
-    },
+
     {
       path: '/expenses',
       element: <Expense />,
