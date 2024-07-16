@@ -26,6 +26,7 @@ import {
   FilterOutlined,
   WalletOutlined,
   ReconciliationOutlined,
+  ProductOutlined,
 } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
 import { selectLangDirection } from '@/redux/translate/selectors';
@@ -55,6 +56,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'dashboard',
       icon: <DashboardOutlined />,
       label: <Link to={'/'}>{translate('dashboard')}</Link>,
+    },
+    {
+      key: 'unit',
+      icon: <ProductOutlined />,
+      label: <Link to={'/unit'}>Units</Link>,
     },
     {
       key: 'customer',
@@ -158,7 +164,7 @@ function Sidebar({ collapsible, isMobile = false }) {
       collapsed={collapsible ? isNavMenuClose : collapsible}
       onCollapse={onCollapse}
       className="navigation"
-      width={256}
+      width={180}
       style={{
         overflow: 'auto',
         height: '100vh',

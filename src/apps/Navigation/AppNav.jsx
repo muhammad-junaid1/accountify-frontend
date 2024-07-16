@@ -3,16 +3,9 @@ import { Link } from 'react-router-dom';
 import {
   SettingOutlined,
   CustomerServiceOutlined,
-  ContainerOutlined,
-  FileSyncOutlined,
   DashboardOutlined,
-  TagOutlined,
-  TagsOutlined,
   UserOutlined,
   CreditCardOutlined,
-  FileOutlined,
-  ShopOutlined,
-  FilterOutlined,
   WalletOutlined,
 } from '@ant-design/icons';
 
@@ -21,6 +14,11 @@ const AppNav = ({ translate }) => [
     key: 'dashboard',
     icon: <DashboardOutlined />,
     label: <Link to={'/'}>{translate('dashboard')}</Link>,
+  },
+  {
+    key: 'unit',
+    icon: <ProductOutlined />,
+    label: <Link to={'/unit'}>Units</Link>,
   },
   {
     key: 'customer',

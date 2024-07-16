@@ -7,6 +7,7 @@ const NotFound = lazy(() => import('@/pages/NotFound.jsx'));
 
 const Dashboard = lazy(() => import('@/pages/Dashboard'));
 const Customer = lazy(() => import('@/pages/Customer'));
+const Unit = lazy(() => import('@/pages/Unit'));
 const Inventory = lazy(() => import('@/pages/Inventory'));
 const Order = lazy(() => import('@/pages/Order'));
 
@@ -62,6 +63,10 @@ let routes = {
     {
       path: '/customer',
       element: <Customer />,
+    },
+    {
+      path: '/unit',
+      element: <Unit />,
     },
     {
       path: '/people',
