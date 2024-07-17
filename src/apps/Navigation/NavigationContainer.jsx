@@ -27,6 +27,7 @@ import {
   WalletOutlined,
   ReconciliationOutlined,
   ProductOutlined,
+  TransactionOutlined,
 } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
 import { selectLangDirection } from '@/redux/translate/selectors';
@@ -61,6 +62,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'unit',
       icon: <ProductOutlined />,
       label: <Link to={'/unit'}>Units</Link>,
+    },
+    {
+      key: 'fullCash',
+      icon: <TransactionOutlined />,
+      label: <Link to={'/fullCash'}>Full Cash</Link>,
     },
     {
       key: 'customer',

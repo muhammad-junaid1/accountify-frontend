@@ -1,6 +1,11 @@
 export const fields = {
+  hash: {
+    type: 'string',
+    required: true,
+  },
   unitNo: {
     type: 'string',
+    label: 'Unit No',
   },
   project: {
     type: 'string',
@@ -12,6 +17,7 @@ export const fields = {
 
   totalPrice: {
     type: 'number',
+    label: 'Total Price',
   },
 
   type: {
@@ -20,10 +26,12 @@ export const fields = {
 
   pricePerSqFeet: {
     type: 'number',
+    label: 'Price Sq/ft',
   },
 
   sizePerSqFeet: {
     type: 'number',
+    label: 'Size Sq/ft',
   },
 
   status: {
@@ -31,5 +39,6 @@ export const fields = {
   },
   downPayment: {
     type: 'number',
+    label: 'Down Payment',
   },
 };
