@@ -8,6 +8,7 @@ import {
   CreditCardOutlined,
   WalletOutlined,
   TransactionOutlined,
+  CalendarOutlined,
 } from '@ant-design/icons';
 
 const AppNav = ({ translate }) => [
@@ -26,6 +27,11 @@ const AppNav = ({ translate }) => [
     icon: <TransactionOutlined />,
     label: <Link to={'/fullCash'}>Full Cash</Link>,
   },
+    {
+      key: 'installment',
+      icon: <CalendarOutlined />,
+      label: <Link to={'/installment'}>Installment</Link>,
+    },
   {
     key: 'customer',
     icon: <CustomerServiceOutlined />,

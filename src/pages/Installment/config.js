@@ -1,12 +1,4 @@
 export const fields = {
-  // unit: {
-  //   type: 'async',
-  //   label: 'Unit details',
-  //   displayLabels: ['unit', 'hash'],
-  //   dataIndex: ['unit', 'hash'],
-  //   entity: 'unit',
-  //   required: true,
-  // },
   unit: {
     type: 'search',
     label: 'Unit Hash',
@@ -21,15 +13,22 @@ export const fields = {
     feedback: 'unit',
     required: true,
   },
-  totalAmount: {
+
+  downPaymentPercent: {
     type: 'number',
-    label: 'Total Amount',
     required: true,
+    label: 'Down Payment (Percentage)',
   },
 
-  discount: {
+  totalMonths: {
     type: 'number',
-    label: 'Discount %',
     required: true,
+    label: 'Total Months',
+  },
+
+  reminderDate: {
+    type: 'date',
+    required: true,
+    label: 'Reminder Date',
   },
 };

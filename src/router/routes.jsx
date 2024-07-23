@@ -12,6 +12,7 @@ const Inventory = lazy(() => import('@/pages/Inventory'));
 const Order = lazy(() => import('@/pages/Order'));
 
 const FullCash = lazy(() => import('@/pages/FullCash/index'));
+const Installment = lazy(() => import('@/pages/Installment/index'));
 const Payment = lazy(() => import('@/pages/Payment/index'));
 const PaymentRead = lazy(() => import('@/pages/Payment/PaymentRead'));
 const PaymentUpdate = lazy(() => import('@/pages/Payment/PaymentUpdate'));
@@ -90,6 +91,10 @@ let routes = {
     {
       path: '/fullCash',
       element: <FullCash />,
+    },
+    {
+      path: '/installment',
+      element: <Installment />,
     },
     {
       path: '/payment/read/:id',

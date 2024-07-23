@@ -28,6 +28,7 @@ import {
   ReconciliationOutlined,
   ProductOutlined,
   TransactionOutlined,
+  CalendarOutlined,
 } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
 import { selectLangDirection } from '@/redux/translate/selectors';
@@ -67,6 +68,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'fullCash',
       icon: <TransactionOutlined />,
       label: <Link to={'/fullCash'}>Full Cash</Link>,
+    },
+    {
+      key: 'installment',
+      icon: <CalendarOutlined />,
+      label: <Link to={'/installment'}>Installment</Link>,
     },
     {
       key: 'customer',
