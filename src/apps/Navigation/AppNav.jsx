@@ -9,6 +9,7 @@ import {
   WalletOutlined,
   TransactionOutlined,
   CalendarOutlined,
+  ApartmentOutlined,
 } from '@ant-design/icons';
 
 const AppNav = ({ translate }) => [
@@ -31,6 +32,11 @@ const AppNav = ({ translate }) => [
       key: 'installment',
       icon: <CalendarOutlined />,
       label: <Link to={'/installment'}>Installment</Link>,
+    },
+    {
+      key: 'rental',
+      icon: <ApartmentOutlined />,
+      label: <Link to={'/rental'}>Rental</Link>,
     },
   {
     key: 'customer',

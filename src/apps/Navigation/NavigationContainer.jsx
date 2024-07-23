@@ -29,6 +29,7 @@ import {
   ProductOutlined,
   TransactionOutlined,
   CalendarOutlined,
+  ApartmentOutlined,
 } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
 import { selectLangDirection } from '@/redux/translate/selectors';
@@ -73,6 +74,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       key: 'installment',
       icon: <CalendarOutlined />,
       label: <Link to={'/installment'}>Installment</Link>,
+    },
+    {
+      key: 'rental',
+      icon: <ApartmentOutlined />,
+      label: <Link to={'/rental'}>Rental</Link>,
     },
     {
       key: 'customer',

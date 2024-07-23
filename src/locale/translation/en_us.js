@@ -15,6 +15,12 @@ const lang = {
   password: 'Password',
   country: 'Country',
   afghanistan: 'Afghanistan',
+  true: 'true',
+  false: 'false',
+  yes: 'yes',
+  no: 'no',
+  Yes: 'Yes',
+  No: 'No',
   albania: 'Albania',
   algeria: 'Algeria',
   andorra: 'Andorra',
@@ -449,7 +455,7 @@ const lang = {
   enter_code: 'Enter Code',
   offers: 'Offers',
   proforma_invoices: 'Proforma Invoices',
-  search:"search"
+  search: 'search',
 };
 
 export default lang;
